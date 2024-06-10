@@ -1,8 +1,15 @@
 body {
-    font-size: 100%
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    background-color: blueviolet;
+    color:#ffff;
 }
 
+
 h1 {
+    
     font-size: 5rem;
 }
 p{
@@ -43,4 +50,46 @@ p{
     p{
         font-size: 50%;
     }
+}
+
+.contenedor{
+    background-color: blueviolet;
+    font-size: 2rem;
+    text-align: center;
+    color: #ffff;
+    width: 10rem;
+    height: 10rem;
+    padding: 5rem;
+    resize: both;
+    overflow: auto;
+    max-width: 20rem;
+    max-height: 15rem;
+}
+
+.containerRR{
+    width: 100%;
+    max-width: fit-content;
+    resize: horizontal;
+    overflow: auto;
+}
+ .containerRR img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+ }
+
+ .containerNRR{
+    width: 100%;
+    resize: horizontal;
+    overflow: auto;
+}
+ .containerNRR img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+ }
+
+
+footer{
+    height: 10rem;
 }
