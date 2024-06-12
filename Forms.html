@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="Forms.css">
 </head>
 
 <body>
@@ -13,9 +14,9 @@
         <h1>Bootstrap</h1>
     </header>
     <main>
-        <h2 id="Forms">Aplicando un forms a nuestra página web</h2>
+        <h2 id="Forms">Aplicando un forms a una página web</h2>
         <section id="Bootstrap">
-            <article>
+            <article id="Paso1">
                 <h3>Paso 1: Agregar Bootstrap al proyecto</h3>
                 <br>
                 <p>Se puede agregar ya sea descargando los archivos css, js y colocándolos donde
@@ -28,117 +29,100 @@
             </article>
         </section>
         <section id="HTML">
-            <article>
-                <p>Paso 2: Hacer el formulario en el HTML del proyecto</p>
+            <article id="Paso2">
+                <h3>Paso 2: Hacer el formulario en el HTML del proyecto</h3>
                 <br>
-                <p>Existen muchas opciones elementos para poner en un formulario, asi
+                <p>Existen muchas opciones y elementos para colocar en un formulario, asi
                     que es recomendable ver los componentes que sean más favorables para tu sitio web
                 </p>
                 <br>
-                <p>Para efectos prácticos, puede agregar el siquiente código a continuación.</p>
+                <p>Estos son algunos de los elementos más utilizados.</p>
+                <p>Importante mencionar que el formulario tiene su propia etiqueta &lt;form&gt;&lt;/form&gt;</p>
                 <br>
+            </article>
+            <article id="CorreoContra">
+                <h3>Correo electrónico y contraseña</h3>
                 <p>
-                    <span>
-                        <p>Para entradas de texto y checks</p>
-                        &ltform&gt
-                        <br>
-                        &ltdiv class="mb-3"&gt
-                        <br>
-                        &ltlabel for="exampleInputEmail1" class="form-label"&gtDirección de correo
-                        electrónico&lt/label&gt
-                        <br>
-                        &ltinput type="email" class="form-control" id="exampleInputEmail1"
-                        aria-describedby="emailHelp"&gt
-                        <br>
-                        &ltdiv id="emailHelp" class="form-text"&gtNunca compartiremos tu correo electrónico con nadie
-                        más..&lt/div&gt
-                        <br>
-                        &lt/div&gt
-                        <br>
-                        &ltdiv class="mb-3"&gt
-                        <br>
-                        &ltlabel for="exampleInputPassword1" class="form-label"&gtContraseña&lt/label&gt
-                        <br>
-                        &ltinput type="password" class="form-control" id="exampleInputPassword1"&gt
-                        <br>
-                        &lt/div&gt
-                        <br>
-                        &ltdiv class="mb-3 form-check"&gt
-                        <br>
-                        &ltinput type="checkbox" class="form-check-input" id="exampleCheck1"&gt
-                        <br>
-                        &ltlabel class="form-check-label" for="exampleCheck1"&gtÉchame un vistazo&lt/label&gt
-                        <br>
-                        &lt/div&gt
-                        <br>
-                        &ltbutton type="submit" class="btn btn-primary"&gtEnviar&lt/button&gt
-                        <br>
-                        &lt/form&gt
-                    </span>
+                    &lt;div class="mb-3"><br>
+                    &lt;label for="exampleInputEmail1" class="form-label">Dirección de correo
+                    electrónico&lt;/label&gt;<br>
+                    &lt;input type="email" class="form-control" id="exampleInputEmail1"
+                    aria-describedby="emailHelp"&gt;<br>
+                    &lt;/div&gt;<br><br>
+                    &lt;div class="mb-3"&gt;<br>
+                    &lt;label for="exampleInputPassword1" class="form-label">Contraseña&lt;/label&gt;<br>
+                    &lt;input type="password" class="form-control" id="exampleInputPassword1"&gt;<br>
+                    &lt;/div&gt;
                 </p>
             </article>
+            <article id="ArchivosListas">
+                <h3>Entrada de Archivo y Listas de datos</h3>
+                <p>
+                    &lt;div class="mb-3"&gt;<br>
+                    &lt;label for="formfile" class="form-label">Por favor seleccione un archivo&lt;/label&gt;<br>
+                    &lt;input class="form-control" type="file" id="formFile"&gt;<br>
+                    &lt;/div&gt;<br><br>
+
+                    &lt;label for="exampleDataList" class="form-label">Pronvincias de Costa Rica&lt;/label&gt;<br>
+                    &lt;input class="form-control" list="datalistOptions" id="exampleDataList"&gt;<br>
+                    &lt;datalist id="datalistOptions"&gt;<br>
+                    &lt;option value="Heredia"&gt;<br>
+                    &lt;option value="San José"&gt;<br>
+                    &lt;option value="Alajuela"&gt;<br>
+                    &lt;option value="Cartago"&gt;<br>
+                    &lt;option value="Limón"&gt;<br>
+                    &lt;option value="Puntarenas"&gt;<br>
+                    &lt;option value="Guanacaste"&gt;<br>
+                    &lt;/datalist&gt;<br>
+
+                </p>
+            </article>
+            <article id="Otros elementos">
+                <h3>Otros elementos</h3><br>
+                <h5>Código para un checkbox</h5>
+                <p>
+                    &lt;div class="mb-3 form-check"&gt;<br>
+                    &lt;input type="checkbox" class="form-check-input" id="exampleCheck1"&gt;<br>
+                    &lt;label class="form-check-label" for="exampleCheck1">Echáme un vistazo&lt;/label&gt;<br>
+                    &lt;/div&gt;<br>
+                </p>
+                <h5>Código para un botón</h5>
+                <p>
+                    &lt;button type="submit" class="btn btn-primary"&gt;Enviar&lt;/button&gt;
+                </p>
+                <p>Para desabilitar algun elemento se usa la palabra <i>disabled</i></p>
+                <p>Para desabilitar un conjunto de elementos se puede usar la etiqueta &lt;fieldset
+                    disabled="disabled"&gt;&lt;/fieldset&gt;</p>
+                <p>
+                    &lt;input class="form-control" id="disabledInput" type="text" placeholder="Elemento desabilitado"
+                    disabled&gt;<br>
+
+                    &lt;input class="form-control" type="text" value="Control de solo lectura" aria-label="readonly
+                    input example" readonly&gt;
+                </p>
+            </article>
+            <article id="extra">
+                <h3>Atributos y clases que se pueden usar en los diferentes componentes</h3>
+                <ul>
+                    <li>Placeholder</li>
+                    <li>form-control-lg/sm</li>
+                    <li>form-text</li>
+                    <li>form-control-plaintext</li>
+                </ul>
+            </article>
         </section>
-
-        <form>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-            <!-- FALTA -->
-            <div class="mb-3">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
-                    <label class="form-check-label" for="disabledFieldsetCheck">
-                        Can't check this
-                    </label>
-                </div>
-            </div>
-
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-
-            <label for="inputPassword5" class="form-label">Password</label>
-            <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
-            <div id="passwordHelpBlock" class="form-text">
-                Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces,
-                special characters, or emoji.
-            </div>
-
-            <div class="mb-3 row">
-                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-                <div class="col-sm-10">
-                  <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
-                </div>
-              </div>
-
-              <div class="mb-3">
-                <label for="formFile" class="form-label">Default file input example</label>
-                <input class="form-control" type="file" id="formFile">
-              </div>
-
-              <label for="exampleDataList" class="form-label">Datalist example</label>
-<input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
-<datalist id="datalistOptions">
-  <option value="San Francisco">
-  <option value="New York">
-  <option value="Seattle">
-  <option value="Los Angeles">
-  <option value="Chicago">
-</datalist>
-        </form>
+        <section id="practica">
+            <h3>Práctica</h3>
+            <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/Ashuri/embed/abrVOdP?default-tab=html%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/Ashuri/pen/abrVOdP">
+                Untitled</a> by AshleyNG (<a href="https://codepen.io/Ashuri">@Ashuri</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+              </iframe>
+        </section>
     </main>
+    <footer>
+        <h2>Demo práctica de Bootstrap 2024</h2>
+    </footer>
     <script src="js/bootstrap.min.js"></script>
 </body>
 
