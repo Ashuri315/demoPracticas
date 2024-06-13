@@ -4,15 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forms</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="Forms.css">
 </head>
 
 <body>
     <header>
+        <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="logo de Bootstrap" class="logo">
         <h1>Bootstrap</h1>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#Paso1">Paso 1</a></li>
+            <li><a href="#Paso2">Paso 2</a></li>
+            <li><a href="#CorreoContra">Correo y contraseña</a></li>
+            <li><a href="#ArchivosListas">Archivos y Listas</a></li>
+            <li><a href="#OtrosElementos">Otros elementos</a></li>
+            <li><a href="#extra">Atributos y clases</a></li>
+            <li><a href="#practica">Práctica</a></li>
+        </ul>
+    </nav>
     <main>
         <h2 id="Forms">Aplicando un forms a una página web</h2>
         <section id="Bootstrap">
@@ -24,7 +36,7 @@
                 </p>
                 <br>
                 <p>Manual para descargar Bootstrap en tu proyecto</p>
-                <br>
+                <a href="Manual Bootstrap.docx" class="linkdocs">Descargar manual</a>
 
             </article>
         </section>
@@ -42,7 +54,7 @@
             </article>
             <article id="CorreoContra">
                 <h3>Correo electrónico y contraseña</h3>
-                <p>
+                <p class="codigo">
                     &lt;div class="mb-3"><br>
                     &lt;label for="exampleInputEmail1" class="form-label">Dirección de correo
                     electrónico&lt;/label&gt;<br>
@@ -57,7 +69,7 @@
             </article>
             <article id="ArchivosListas">
                 <h3>Entrada de Archivo y Listas de datos</h3>
-                <p>
+                <p class="codigo">
                     &lt;div class="mb-3"&gt;<br>
                     &lt;label for="formfile" class="form-label">Por favor seleccione un archivo&lt;/label&gt;<br>
                     &lt;input class="form-control" type="file" id="formFile"&gt;<br>
@@ -77,23 +89,25 @@
 
                 </p>
             </article>
-            <article id="Otros elementos">
+            <article id="OtrosElementos">
                 <h3>Otros elementos</h3><br>
                 <h5>Código para un checkbox</h5>
-                <p>
+                <p class="codigo">
                     &lt;div class="mb-3 form-check"&gt;<br>
                     &lt;input type="checkbox" class="form-check-input" id="exampleCheck1"&gt;<br>
                     &lt;label class="form-check-label" for="exampleCheck1">Echáme un vistazo&lt;/label&gt;<br>
                     &lt;/div&gt;<br>
                 </p>
                 <h5>Código para un botón</h5>
-                <p>
+                <p class="codigo">
                     &lt;button type="submit" class="btn btn-primary"&gt;Enviar&lt;/button&gt;
                 </p>
-                <p>Para desabilitar algun elemento se usa la palabra <i>disabled</i></p>
-                <p>Para desabilitar un conjunto de elementos se puede usar la etiqueta &lt;fieldset
-                    disabled="disabled"&gt;&lt;/fieldset&gt;</p>
-                <p>
+                <ul>
+                    <li>Para desabilitar algun elemento se usa la palabra <i>disabled</i></li>
+                    <li>Para desabilitar un conjunto de elementos se puede usar la etiqueta &lt;fieldset
+                        disabled="disabled"&gt;&lt;/fieldset&gt;</li>
+                </ul>
+                <p class="codigo">
                     &lt;input class="form-control" id="disabledInput" type="text" placeholder="Elemento desabilitado"
                     disabled&gt;<br>
 
