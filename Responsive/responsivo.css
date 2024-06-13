@@ -1,0 +1,46 @@
+*{
+    color: rgb(231, 231, 231);
+    
+}
+body {
+    background-color: #936e0a;
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    background-color: #806208;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+}
+
+.containerRR{
+    width: 100%;
+    max-width: fit-content;
+    resize: horizontal;
+    overflow: auto;
+}
+ .containerRR img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+ }
+
+ .containerNRR{
+    width: 100%;
+    resize: horizontal;
+    overflow: auto;
+}
+ .containerNRR img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+ }
+
+
+footer{
+    background-color: #49340d;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+}
